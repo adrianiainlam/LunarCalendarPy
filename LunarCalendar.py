@@ -195,7 +195,7 @@ class LunarCalendar:
             day = self.__getTerm(year, i)
             if i % 2 == 0:
                 month += 1
-                res[self.__formatDayD4(month - 1, day)] = self.__solarTerm[i]
+            res[self.__formatDayD4(month - 1, day)] = self.__solarTerm[i]
         return res
 
     def __getYearZodiac(self, year):
